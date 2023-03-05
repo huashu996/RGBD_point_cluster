@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<launch>
+    <node pkg="points_ground_filter" type="points_ground_filter_node" name="points_ground_filter_node" output="screen">
+        <param name="sub_topic" value="/camera/depth/color/points"/>
+        <param name="pub_ground_topic" value="/points_ground"/>
+    </node>
+</launch>
